@@ -39,7 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Barricade.cs" />
+    <Compile Include="Fields\Field.cs" />
+    <Compile Include="Fields\FieldBase.cs" />
+    <Compile Include="Fields\FinishField.cs" />
+    <Compile Include="Fields\Forest.cs" />
+    <Compile Include="Fields\RestField.cs" />
+    <Compile Include="Fields\StartField.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Fields\IField.cs" />
+    <Compile Include="Pawn.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

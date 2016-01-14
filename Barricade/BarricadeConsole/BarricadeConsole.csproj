@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>127d2bd5-9ee2-4415-b387-d35a60fa10be</ProjectGuid>
+    <ProjectGuid>{BDFC2689-7F1D-468A-AF1E-94DA5CC27F31}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BarricadeConsole</RootNamespace>
