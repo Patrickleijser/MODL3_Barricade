@@ -9,12 +9,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class StartField : BaseField
+public class Barricade : IMoveable
 {
-	public virtual Player Player
+	public virtual IField Position
 	{
 		get;
 		set;
+	}
+
+	public virtual IField IField
+	{
+		get;
+		set;
+	}
+
+	public virtual void Move(IField field)
+	{
+		throw new System.NotImplementedException();
 	}
 
 }

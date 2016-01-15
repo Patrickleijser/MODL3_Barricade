@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="ProjectPath = ..\BarricadeModelingLib\BarricadeModelingLib.csproj" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:07" Importance="Medium" Text="BarricadeModeling's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'BarricadeModeling::Game' -  (Class), 'BarricadeModeling::BaseField' -  (Class), 'BarricadeModeling::StartField' -  (Class), 'BarricadeModeling::RestField' -  (Class), 'BarricadeModeling::ForestField' -  (Class), 'BarricadeModeling::Field' -  (Class), 'BarricadeModeling::FinishField' -  (Class), 'BarricadeModeling::Player' -  (Class), 'BarricadeModeling::Pawn' -  (Class), 'BarricadeModeling::Barricade' -  (Class) " />
+  <Message Timestamp="2016-01-15T21:00:08" Importance="Medium" Text="Project Added: C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\BarricadeModelingLib.csproj" />
+  <Message Timestamp="2016-01-15T21:00:08" Importance="Medium" Text="'BarricadeModeling::Game' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Game.cs" />
+  <Message Timestamp="2016-01-15T21:00:09" Importance="Medium" Text="'BarricadeModeling::BaseField' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\BaseField.cs" />
+  <Message Timestamp="2016-01-15T21:00:09" Importance="Medium" Text="'BarricadeModeling::StartField' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\StartField.cs" />
+  <Message Timestamp="2016-01-15T21:00:09" Importance="Medium" Text="'BarricadeModeling::RestField' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\RestField.cs" />
+  <Message Timestamp="2016-01-15T21:00:10" Importance="Medium" Text="'BarricadeModeling::ForestField' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\ForestField.cs" />
+  <Message Timestamp="2016-01-15T21:00:10" Importance="Medium" Text="'BarricadeModeling::Field' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Field.cs" />
+  <Message Timestamp="2016-01-15T21:00:11" Importance="Medium" Text="'BarricadeModeling::FinishField' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\FinishField.cs" />
+  <Message Timestamp="2016-01-15T21:00:11" Importance="Medium" Text="'BarricadeModeling::Player' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Player.cs" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Medium" Text="'BarricadeModeling::Pawn' -  (Class) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Pawn.cs" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Medium" Text="'BarricadeModeling::Barricade' -  (Class) : success (file replaced) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Barricade.cs" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="ProjectPath = ..\BarricadeModelingLib\BarricadeModelingLib.csproj" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Medium" Text="BarricadeModeling's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'BarricadeModeling::Color' -  (Enumeration) " />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Medium" Text="'BarricadeModeling::Color' -  (Enumeration) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\Color.cs" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="ProjectPath = ..\BarricadeModelingLib\BarricadeModelingLib.csproj" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:12" Importance="Medium" Text="BarricadeModeling's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'BarricadeModeling::IField' -  (Interface), 'BarricadeModeling::IMoveable' -  (Interface) " />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Medium" Text="'BarricadeModeling::IField' -  (Interface) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\IField.cs" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Medium" Text="'BarricadeModeling::IMoveable' -  (Interface) : success (file created) - C:\Users\Patrick\Documents\GitHubVisualStudio\MODL3_Barricade\Barricade\BarricadeModelingLib\GeneratedCode\IMoveable.cs" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="ProjectPath = ..\BarricadeModelingLib\BarricadeModelingLib.csproj" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Medium" Text="BarricadeModeling's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'BarricadeModeling::Game' -  (Class), 'BarricadeModeling::BaseField' -  (Class), 'BarricadeModeling::StartField' -  (Class), 'BarricadeModeling::RestField' -  (Class), 'BarricadeModeling::ForestField' -  (Class), 'BarricadeModeling::Field' -  (Class), 'BarricadeModeling::FinishField' -  (Class), 'BarricadeModeling::Player' -  (Class), 'BarricadeModeling::Pawn' -  (Class), 'BarricadeModeling::Barricade' -  (Class) " />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="'BarricadeModeling::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="'BarricadeModeling::BaseField' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:13" Importance="Diagnostic" Text="'BarricadeModeling::StartField' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::RestField' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::ForestField' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::Field' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::FinishField' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::Player' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::Pawn' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::Barricade' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="The selection included 16 elements which were not bound to a template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'52e45f5e-1cdf-40ac-9351-55875b5d01ff' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'e40d5206-6cd3-4a5f-9926-638de6220245' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'a84b8d0b-aeed-4c38-ae04-318fd38636fa' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'7473a66a-0a5d-4831-8c3f-e5aad47eef34' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="Diagnostic" Text="'BarricadeModeling::' -  (Association): no bound template." />
+  <Message Timestamp="2016-01-15T21:00:14" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

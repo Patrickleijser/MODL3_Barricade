@@ -9,13 +9,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class StartField : BaseField
+public enum Color
 {
-	public virtual Player Player
-	{
-		get;
-		set;
-	}
-
+	Red,
+	Blue,
+	Yellow,
+	Green,
 }
-
