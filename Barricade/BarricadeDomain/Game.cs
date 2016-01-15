@@ -11,28 +11,30 @@ using System.Text;
 
 public class Game
 {
-	public IEnumerable<Player> Players { get; set; }
-
-    public Game(List<Player> players)
-    {
-        Players = players;
-    }
-
-	public void Play()
+	public virtual IEnumerable<Player> Player
 	{
-		// TODO
+		get;
+		set;
 	}
 
-	public int ThrowDice()
+	public virtual void Play()
 	{
-        int random = Random.
-        
-        return 0;
+		throw new System.NotImplementedException();
 	}
 
-	public void ChangeTurn()
+	public virtual int ThrowDice()
 	{
-		// TODO
+		throw new System.NotImplementedException();
+	}
+
+	public virtual void ChangeTurn()
+	{
+		throw new System.NotImplementedException();
+	}
+
+	private void InitGame()
+	{
+		throw new System.NotImplementedException();
 	}
 
 }
