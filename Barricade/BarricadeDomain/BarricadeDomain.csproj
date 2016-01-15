@@ -39,18 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barricade.cs" />
+    <Compile Include="Moveables\Barricade.cs" />
+    <Compile Include="Fields\BaseField.cs" />
+    <Compile Include="Enums\Color.cs" />
     <Compile Include="Fields\Field.cs" />
-    <Compile Include="Fields\FieldBase.cs" />
     <Compile Include="Fields\FinishField.cs" />
-    <Compile Include="Fields\Forest.cs" />
-    <Compile Include="Fields\RestField.cs" />
-    <Compile Include="Fields\StartField.cs" />
+    <Compile Include="Fields\ForestField.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Fields\IField.cs" />
-    <Compile Include="Pawn.cs" />
+    <Compile Include="Moveables\IMoveable.cs" />
+    <Compile Include="Moveables\Pawn.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Fields\RestField.cs" />
+    <Compile Include="Fields\StartField.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
