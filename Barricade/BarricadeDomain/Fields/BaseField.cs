@@ -17,31 +17,19 @@ public abstract class BaseField : IField
 		set;
 	}
 
-	public virtual IField FieldAbove
-	{
-		get;
-		set;
-	}
-
-	public virtual IField FieldBelow
-	{
-		get;
-		set;
-	}
-
-	public virtual IField FieldLeft
-	{
-		get;
-		set;
-	}
-
-	public virtual IField FieldRight
-	{
-		get;
-		set;
-	}
-
 	public virtual Pawn Pawn
+	{
+		get;
+		set;
+	}
+
+	public virtual integer CoordX
+	{
+		get;
+		set;
+	}
+
+	public virtual integer CoordY
 	{
 		get;
 		set;
