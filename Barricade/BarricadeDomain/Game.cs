@@ -11,11 +11,15 @@ using System.Text;
 
 public class Game
 {
-	public virtual IEnumerable<Player> Player
-	{
-		get;
-		set;
-	}
+    public virtual IEnumerable<Player> Player
+    {
+        get;
+        set;
+    }
+    public Game(List<Player> players)
+    {
+        Player = players;
+    }
 
 	public virtual void Play()
 	{

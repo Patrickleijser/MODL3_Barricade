@@ -23,13 +23,13 @@ public abstract class BaseField : IField
 		set;
 	}
 
-	public virtual integer CoordX
+	public virtual int CoordX
 	{
 		get;
 		set;
 	}
 
-	public virtual integer CoordY
+	public virtual int CoordY
 	{
 		get;
 		set;
@@ -50,5 +50,17 @@ public abstract class BaseField : IField
 		throw new System.NotImplementedException();
 	}
 
+
+    public IEnumerable<IField> IField
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
