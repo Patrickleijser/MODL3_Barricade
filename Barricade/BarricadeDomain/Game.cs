@@ -10,15 +10,19 @@ using System.Xml;
 public class Game
 {
     #region Properties
+    public Player activePlayer { get; set; }
     public IEnumerable<Player> Players { get; set; }
     #endregion
 
     #region Constructor
     public Game(List<Player> players)
     {
-        // TODO: check if max players (4) is not overruled and min 2.
-        Players = players;
-        InitGame();
+        if(players.Count > 2 && players.Count <= 4)
+        {
+            Players = players;
+            InitGame();
+        }
+
     }
     #endregion
 
@@ -37,6 +41,22 @@ public class Game
         {
             Players.ElementAt(i).Color = colors.ElementAt(i);
         }
+
+        // Create player pawns
+        foreach (Player player in Players)
+        {
+            List<Pawn> pawns = new List<Pawn>();
+            for (int i = 0; i < 4; i++)
+            {
+                Pawn newPawn = new Pawn {Color = player.Color};
+                pawns.Add(newPawn);
+            }
+            player.Pawns = pawns;
+        }
+
+        // Selected starting player
+        Random r = new Random();
+        activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
         // Parse level
         XmlDocument xmlFile = new XmlDocument();
@@ -58,7 +78,14 @@ public class Game
 
 	public void ChangeTurn()
 	{
-		// Change turn here
+        for (int i = 0; i < Players.Count(); i++)
+        {
+            if(Players.ElementAt(i) == activePlayer)
+            {
+                activePlayer = i == (Players.Count() - 1) ? Players.ElementAt(0) : Players.ElementAt(i+1);
+                break;
+            }
+        }
 	}
     #endregion
 
