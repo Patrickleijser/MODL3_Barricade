@@ -18,11 +18,11 @@ public class Player
 		set;
 	}
 
-	public StartField StartField
-	{
-		get;
-		set;
-	}
+    public IEnumerable<StartField> StartFields
+    {
+        get;
+        set;
+    }
 
 	public IEnumerable<Pawn> Pawns
 	{

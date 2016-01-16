@@ -1,92 +1,215 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <gameboard>
   <row nr="1">
-      <IField type="startfield">
-        <CoordX>1</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-        <connectedfield>
-          <IField type="firstrow">
-            
-          </IField>
-        </connectedfield>
-      </IField>
-      <IField type="startfield">
-        <CoordX>2</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>3</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>4</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>6</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>7</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>8</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
-      <IField type="startfield">
-        <CoordX>9</CoordX>
-        <CoordY>0</CoordY>
-        <IsVillage>false</IsVillage>
-      </IField>
+    <IField type="startfield">
+      <CoordX>1</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>1</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>2</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>1</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>3</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>3</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>4</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>3</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>6</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>7</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>7</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>7</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>8</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>9</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="startfield">
+      <CoordX>9</CoordX>
+      <CoordY>0</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>9</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
   </row>
   <row nr="2">
     <IField type="startfield">
       <CoordX>1</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>1</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>2</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>1</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>3</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>3</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>4</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>3</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>6</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>6</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>7</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>6</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>8</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>8</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="startfield">
       <CoordX>9</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>true</IsFirstRow>
+          <CoordX>8</CoordX>
+          <CoordY>2</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
   </row>
   <row nr="3">
@@ -95,18 +218,34 @@
       <CoordX>0</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>0</CoordX>
+          <CoordY>3</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>true</IsFirstRow>
       <CoordX>1</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>true</IsFirstRow>
       <CoordX>2</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>2</CoordX>
+          <CoordY>3</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>true</IsFirstRow>
@@ -125,6 +264,13 @@
       <CoordX>5</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>5</CoordX>
+          <CoordY>3</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>true</IsFirstRow>
@@ -143,6 +289,13 @@
       <CoordX>8</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>8</CoordX>
+          <CoordY>3</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>true</IsFirstRow>
@@ -155,6 +308,13 @@
       <CoordX>10</CoordX>
       <CoordY>2</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>10</CoordX>
+          <CoordY>3</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
   </row>
   <row nr="4">
@@ -179,6 +339,13 @@
       <CoordX>3</CoordX>
       <CoordY>3</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <CoordX>3</CoordX>
+          <CoordY>5</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="field">
       <IsFirstRow>false</IsFirstRow>
@@ -202,6 +369,13 @@
       <CoordX>7</CoordX>
       <CoordY>3</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <CoordX>7</CoordX>
+          <CoordY>5</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
     <IField type="restfield">
       <CoordX>8</CoordX>
@@ -223,7 +397,353 @@
   <row nr="5">
     <IField type="forestfield">
       <CoordX>10</CoordX>
-      <CoordY>3</CoordY>
+      <CoordY>4</CoordY>
+      <connectedfields>
+        <IField type="restfield">
+          <CoordX>5</CoordX>
+          <CoordY>5</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
   </row>
-</gameboard> 
+  <row nr="6">
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>3</CoordX>
+      <CoordY>5</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>4</CoordX>
+      <CoordY>5</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="restfield">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>5</CoordX>
+      <CoordY>5</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>6</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>6</CoordX>
+      <CoordY>5</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>7</CoordX>
+      <CoordY>5</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+  </row>
+  <row nr="7">
+    <IField type="restfield">
+      <CoordX>2</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>2</CoordX>
+          <CoordY>7</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>3</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>3</CoordX>
+          <CoordY>6</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>4</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>5</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>6</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>7</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>7</CoordX>
+          <CoordY>6</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="restfield">
+      <CoordX>8</CoordX>
+      <CoordY>6</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>8</CoordX>
+          <CoordY>7</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+  </row>
+  <row nr="8">
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>2</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>3</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>4</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>4</CoordX>
+          <CoordY>7</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>5</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>8</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>6</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>6</CoordX>
+          <CoordY>7</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>7</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>8</CoordX>
+      <CoordY>7</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+  </row>
+  <row nr="9">
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>1</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>1</CoordX>
+          <CoordY>9</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>2</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>3</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="restfield">
+      <CoordX>4</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>5</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>8</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="restfield">
+      <CoordX>6</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>7</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>8</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>9</CoordX>
+      <CoordY>8</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>9</CoordX>
+          <CoordY>9</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+    </IField>
+  </row>
+  <row nr="10">
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>1</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>2</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>3</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>4</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>5</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>10</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </connectedfields>
+      <barricade>
+        <IField>
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>9</CoordY>
+          <IsVillage>false</IsVillage>
+        </IField>
+      </barricade>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>6</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>7</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>8</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+    <IField type="field">
+      <IsFirstRow>false</IsFirstRow>
+      <CoordX>9</CoordX>
+      <CoordY>9</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+  </row>
+  <row nr="11">
+    <IField>
+      <CoordX>5</CoordX>
+      <CoordY>10</CoordY>
+      <IsVillage>false</IsVillage>
+    </IField>
+  </row>
+</gameboard>

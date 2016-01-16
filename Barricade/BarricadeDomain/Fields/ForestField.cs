@@ -26,26 +26,14 @@ public class ForestField : IField
 
     public int CoordX
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 
     public int CoordY
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 }
 
