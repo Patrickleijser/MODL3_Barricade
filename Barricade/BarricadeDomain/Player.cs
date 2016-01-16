@@ -41,7 +41,15 @@ public class Player
     #region Methods
     public Pawn ChoosePawn()
 	{
-		throw new System.NotImplementedException();
+        bool unvalidPawn = true;
+        Console.WriteLine("Choose Pawn: ");
+        int pawnNr = 0;
+        while (unvalidPawn)
+        {
+            unvalidPawn = Int32.TryParse(Console.ReadLine(), out pawnNr);
+        }
+        Pawn p = Pawns.ElementAt(pawnNr-1);
+        return p;
 	}
 
 	public void PlacePawn()

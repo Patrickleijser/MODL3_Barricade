@@ -9,17 +9,19 @@ public abstract class BaseField : IField
 
 	public void PlacePawn(Pawn pawn)
 	{
-		throw new System.NotImplementedException();
+        if (Pawn != null)
+            RemovePawn(Pawn);
+        Pawn = pawn;
 	}
 
 	public void RemovePawn(Pawn pawn)
 	{
-		throw new System.NotImplementedException();
+        pawn.Position = pawn.IField;
 	}
 
 	public bool CanPlace()
 	{
-		throw new System.NotImplementedException();
+        return true;
 	}
     public IEnumerable<IField> ConnectedFields { get; set; }
 
