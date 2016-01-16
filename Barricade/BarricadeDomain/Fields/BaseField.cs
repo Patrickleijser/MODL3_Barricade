@@ -19,7 +19,7 @@ public abstract class BaseField : IField
         pawn.Position = pawn.IField;
 	}
 
-	public bool CanPlace()
+	public virtual bool CanPlace()
 	{
         return true;
 	}
@@ -40,26 +40,14 @@ public abstract class BaseField : IField
 
     public bool IsFirstRow
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 
     public bool IsVillage
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 }
 

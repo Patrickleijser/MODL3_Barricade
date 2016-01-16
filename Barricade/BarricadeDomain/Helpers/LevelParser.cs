@@ -11,11 +11,10 @@ namespace BarricadeDomain.Helpers
     class LevelParser
     {
         #region Properties
-        public StartField StartFieldOne { get; set; }
-        public StartField StartFieldTwo { get; set; }
-        public StartField StartFieldThree { get; set; }
-        public StartField StartFieldFour { get; set; }
-        private List<IField> AllFields { get; set; }
+        public List<StartField> StartFieldsPlayerOne { get; set; }
+        public List<StartField> StartFieldsPlayerTwo { get; set; }
+        public List<StartField> StartFieldsPlayerThree { get; set; }
+        public List<StartField> StartFieldsPlayerFour { get; set; }
         #endregion
 
         #region Variables
@@ -26,10 +25,13 @@ namespace BarricadeDomain.Helpers
         public LevelParser(XmlDocument xmlFile)
         {
             _xmlFile = xmlFile;
-            AllFields = new List<IField>();
+            StartFieldsPlayerOne = new List<StartField>();
+            StartFieldsPlayerTwo = new List<StartField>();
+            StartFieldsPlayerThree = new List<StartField>();
+            StartFieldsPlayerFour = new List<StartField>();
 
+            // Parse XML and connect the fields
             ParseXML();
-            ConnectFields();
         }
         #endregion
 
@@ -57,12 +59,13 @@ namespace BarricadeDomain.Helpers
                     newField.IsFirstRow = isFirstRow;
                     newField.IsVillage = isVillage;
 
-                    AllFields.Add(newField);
+                    ConnectFields(newField, null);
+                    
                 }
             }
         }
-        private void ConnectFields() {
-
+        private void ConnectFields(IField fieldOne, IField fieldTwo) {
+            
         }
         #endregion
     }
