@@ -9,6 +9,10 @@ public interface IField
 
     int CoordY { get; set; }
 
+    bool IsFirstRow { get; set; }
+
+    bool IsVillage { get; set; }
+
 	IEnumerable<IField> ConnectedFields { get; set; }
     
 	void PlacePawn(Pawn pawn);

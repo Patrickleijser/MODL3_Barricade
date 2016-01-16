@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fields\FieldFactory.cs" />
     <Compile Include="Helpers\LevelParser.cs" />
     <Compile Include="Moveables\Barricade.cs" />
     <Compile Include="Fields\BaseField.cs" />

@@ -740,7 +740,8 @@
     </IField>
   </row>
   <row nr="11">
-    <IField>
+    <IField type="finishfield">
+      <IsFirstRow>false</IsFirstRow>
       <CoordX>5</CoordX>
       <CoordY>10</CoordY>
       <IsVillage>false</IsVillage>

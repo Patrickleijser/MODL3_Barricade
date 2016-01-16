@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarricadeDomain.Fields;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,15 +27,20 @@ namespace BarricadeDomain.Helpers
         {
             _xmlFile = xmlFile;
             AllFields = new List<IField>();
+
             ParseXML();
+            ConnectFields();
         }
         #endregion
 
         #region Methods
         private void ParseXML()
         {
+            FieldFactory fieldFactory = new FieldFactory();
+
             XmlElement root = _xmlFile.DocumentElement;
             XmlNodeList rows = root.SelectNodes("row");
+
             foreach (XmlNode row in rows)
             {
                 XmlNodeList fields = row.SelectNodes("IField");
@@ -42,8 +48,16 @@ namespace BarricadeDomain.Helpers
                 {
                     int x = Convert.ToInt32(field.SelectSingleNode("CoordX").InnerText);
                     int y = Convert.ToInt32(field.SelectSingleNode("CoordY").InnerText);
+                    Boolean isFirstRow = Convert.ToBoolean(field.SelectSingleNode("IsFirstRow").InnerText);
+                    Boolean isVillage = Convert.ToBoolean(field.SelectSingleNode("IsVillage").InnerText);
 
-                    AllFields.Add(new Field { CoordX=x, CoordY=y, IsFirstRow=false, IsVillage=false, Pawn=null, ConnectedFields=null });
+                    IField newField = fieldFactory.GetField(field.Attributes["type"].Value);
+                    newField.CoordX = x;
+                    newField.CoordY = y;
+                    newField.IsFirstRow = isFirstRow;
+                    newField.IsVillage = isVillage;
+
+                    AllFields.Add(newField);
                 }
             }
         }

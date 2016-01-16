@@ -5,7 +5,6 @@ using System.Text;
 
 public class Field : BaseField
 {
-	public bool IsFirstRow { get; set; }
 
 }
 
