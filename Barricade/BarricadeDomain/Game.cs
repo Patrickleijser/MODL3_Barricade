@@ -1,7 +1,11 @@
-﻿using System;
+﻿using BarricadeDomain.Helpers;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Xml;
 
 public class Game
 {
@@ -12,6 +16,7 @@ public class Game
     #region Constructor
     public Game(List<Player> players)
     {
+        // TODO: check if max players (4) is not overruled and min 2.
         Players = players;
         InitGame();
     }
@@ -32,6 +37,11 @@ public class Game
         {
             Players.ElementAt(i).Color = colors.ElementAt(i);
         }
+
+        // Parse level
+        XmlDocument xmlFile = new XmlDocument();
+        xmlFile.Load(@"..\..\..\BarricadeData\Default.xml");
+        LevelParser levelParser = new LevelParser(xmlFile);
 
     }
 

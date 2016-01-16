@@ -5,7 +5,6 @@ using System.Text;
 
 public class Barricade : IMoveable
 {
-	public IField Position { get; set; }
 
 	public IField IField { get; set; }
 
