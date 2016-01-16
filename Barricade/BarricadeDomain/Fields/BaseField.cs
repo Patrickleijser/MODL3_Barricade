@@ -5,7 +5,6 @@ using System.Text;
 
 public abstract class BaseField : IField
 {
-	public bool IsVillage { get; set; }
 	public Pawn Pawn { get; set; }
 
 	public void PlacePawn(Pawn pawn)
@@ -36,6 +35,31 @@ public abstract class BaseField : IField
     {
         get;
         set;
+    }
+
+
+    public bool IsFirstRow
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public bool IsVillage
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

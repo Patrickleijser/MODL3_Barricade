@@ -35,5 +35,30 @@ public class ForestField : IField
         get;
         set;
     }
+
+
+    public bool IsFirstRow
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public bool IsVillage
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
