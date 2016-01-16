@@ -39,26 +39,14 @@ public class ForestField : IField
 
     public bool IsFirstRow
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 
     public bool IsVillage
     {
-        get
-        {
-            throw new NotImplementedException();
-        }
-        set
-        {
-            throw new NotImplementedException();
-        }
+        get;
+        set;
     }
 }
 
