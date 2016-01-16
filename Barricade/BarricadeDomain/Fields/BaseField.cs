@@ -6,7 +6,6 @@ using System.Text;
 public abstract class BaseField : IField
 {
 	public bool IsVillage { get; set; }
-
 	public Pawn Pawn { get; set; }
 
 	public void PlacePawn(Pawn pawn)
@@ -23,7 +22,6 @@ public abstract class BaseField : IField
 	{
 		throw new System.NotImplementedException();
 	}
-
     public IEnumerable<IField> ConnectedFields { get; set; }
 
     public int CoordX

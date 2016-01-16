@@ -23,12 +23,9 @@ namespace BarricadeConsole
             players.Add(a);
             players.Add(y);
             Game g = new Game(players);
-            
             List<int> dicesThrow = new List<int>();
             while(true)
             {
-                Console.WriteLine(g.ThrowDice() + "--" + g.ThrowDice() + "--" + g.ThrowDice() + "--" + g.ThrowDice() + "--" + g.ThrowDice() + "--" + g.ThrowDice() + "--" + g.ThrowDice());
-                Thread.Sleep(400);
             }
 
         }
