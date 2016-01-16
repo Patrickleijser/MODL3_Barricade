@@ -23,6 +23,11 @@ public class Player
 		set;
 	}
 
+    public Player(string name)
+    {
+        Name = name;
+    }
+
 	public virtual StartField StartField
 	{
 		get;

@@ -32,5 +32,17 @@ public class ForestField : IField
 		throw new System.NotImplementedException();
 	}
 
+
+    public IEnumerable<IField> IField
+    {
+        get
+        {
+            throw new NotImplementedException();
+        }
+        set
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
