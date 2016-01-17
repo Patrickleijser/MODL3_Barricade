@@ -31,7 +31,7 @@
         <OperationElementListCompartment Id="a5b7777f-5c08-4738-8154-523f6df8b080" absoluteBounds="7.39, 2.9765075068672497, 1.4700000000000002, 0.6816406026482581" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <realizationConnector edgePoints="[(7.375 : 3.25407405475775); (5.5 : 3.25407405475775)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+    <realizationConnector edgePoints="[(7.375 : 3.25407405475775); (6.73958333333333 : 3.25407405475775 : JumpStart); (6.57291666666667 : 3.25407405475775 : JumpEnd); (5.5 : 3.25407405475775)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
       <interfaceRealizationMoniker Id="b4659856-281a-4126-884f-ae50677018fd" />
       <relativeChildShapes />
       <nodes>

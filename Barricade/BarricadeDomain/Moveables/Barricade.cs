@@ -8,10 +8,12 @@ public class Barricade : IMoveable
 
     public IField Position { get; set; }
 
-	public void Move(IField field) 
+    public void Move(IField oldField, IField field)
     {
-		throw new System.NotImplementedException();
-	}
+        IMoveable moveable = oldField.Moveables.First();
+        field.PlaceMoveable(moveable);
+        oldField.RemoveMoveable(moveable);
+    }
 
 }
 

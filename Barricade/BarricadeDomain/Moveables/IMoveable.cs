@@ -6,7 +6,7 @@ using System.Text;
 public interface IMoveable 
 {
     IField Position { get; set; }
-	void Move(IField field);
+	void Move(IField oldField, IField field);
 
 }
 

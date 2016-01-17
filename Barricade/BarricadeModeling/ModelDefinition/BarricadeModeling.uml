@@ -2752,9 +2752,22 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="4458dc4e-76fa-42c7-80cf-35587842dbcb"
-                  name="field"
+                  name="oldField"
                   direction="In"
                   isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="0cc66211-05e4-4026-85da-acd34af05fd5"
+                      LastKnownName="IField"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c3937a8b-2455-42ab-96ec-0f9e6e1dd7f8"
+                  name="field"
+                  direction="In">
                   <type_NamedElement>
                     <interfaceMoniker
                       Id="0cc66211-05e4-4026-85da-acd34af05fd5"
@@ -3001,6 +3014,20 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="0a9dd76c-ecd8-4b26-8e70-8a2bfb6147b8"
+                  name="oldField"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="0cc66211-05e4-4026-85da-acd34af05fd5"
+                      LastKnownName="IField"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bbfe63b6-2df0-4330-b5f5-8516920094b3"
                   name="field"
                   direction="In"
                   isUnique="false">
@@ -3180,9 +3207,22 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="531047e4-1ec2-4811-baa6-5c66b03a1f3b"
-                  name="field"
+                  name="oldField"
                   direction="In"
                   isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="0cc66211-05e4-4026-85da-acd34af05fd5"
+                      LastKnownName="IField"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34741858-36f0-4693-9613-169f820419d6"
+                  name="field"
+                  direction="In">
                   <type_NamedElement>
                     <interfaceMoniker
                       Id="0cc66211-05e4-4026-85da-acd34af05fd5"
