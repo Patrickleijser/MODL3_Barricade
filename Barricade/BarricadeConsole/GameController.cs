@@ -60,8 +60,33 @@ namespace BarricadeConsole
             int diceNumber = _game.ThrowDice();
             Console.WriteLine("Throwing dice......");
             Console.WriteLine(_game.activePlayer.Name+" threw "+diceNumber);
-            Console.WriteLine("Choose pawn:");
-            Console.ReadLine();
+            Console.WriteLine("Choose pawn by coord X-coord Y: ");
+            int coordx = -1;
+            int coordy = -1;
+            while (true)
+            {
+                string[] s = Console.ReadLine().Split('-');
+                Int32.TryParse(s[0], out coordx);
+                Int32.TryParse(s[1], out coordy);
+                if (coordx != -1 && coordy != -1)
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid coords try again");
+            }
+            Console.WriteLine("Choose new posistion by coord X-coord Y:");
+            while (true)
+            {
+                string[] s = Console.ReadLine().Split('-');
+                Int32.TryParse(s[0], out coordx);
+                Int32.TryParse(s[1], out coordy);
+                if (coordx != -1 && coordy != -1)
+                {
+                    break;
+                }
+                Console.WriteLine("Invalid coords try again");
+            }
+            
         }
 
         private void SwitchTurn()

@@ -36,7 +36,7 @@ public abstract class BaseField : IField
     #endregion
 
     #region Methods
-    public void PlaceMoveable(IMoveable moveable)
+    public virtual void PlaceMoveable(IMoveable moveable)
 	{
         if (Moveables != null)
             RemoveMoveable(Moveables.First());
