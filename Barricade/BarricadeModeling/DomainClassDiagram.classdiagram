@@ -1986,8 +1986,16 @@
             <elementDefinition Id="476c13c4-5f5e-4b14-a040-98435ec1a94f" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d44b005a-15d1-48be-9cb5-f5d37a77e035" name="field" direction="In" isUnique="false">
+                <parameter Id="d44b005a-15d1-48be-9cb5-f5d37a77e035" name="oldField" direction="In" isUnique="false">
                   <elementDefinition Id="4458dc4e-76fa-42c7-80cf-35587842dbcb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94dbd3b2-102c-4d7c-ac6a-e6640145ea20" name="field" direction="In">
+                  <elementDefinition Id="c3937a8b-2455-42ab-96ec-0f9e6e1dd7f8" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
                   </type_NamedElement>
@@ -2221,8 +2229,16 @@
             <elementDefinition Id="da9f70f6-9577-4117-895d-1e07ce9eea9d" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3905a476-962b-4c1e-b8e7-35276acb2105" name="field" direction="In" isUnique="false">
+                <parameter Id="3905a476-962b-4c1e-b8e7-35276acb2105" name="oldField" direction="In" isUnique="false">
                   <elementDefinition Id="0a9dd76c-ecd8-4b26-8e70-8a2bfb6147b8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a76d8638-033a-4119-83dd-4b87c08a88c6" name="field" direction="In" isUnique="false">
+                  <elementDefinition Id="bbfe63b6-2df0-4330-b5f5-8516920094b3" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
                   </type_NamedElement>
@@ -2345,8 +2361,16 @@
             <elementDefinition Id="4c035472-f3ab-4020-a04b-b62023710862" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3b7dbf09-f86d-464b-bf66-03b490fea479" name="field" direction="In" isUnique="false">
+                <parameter Id="3b7dbf09-f86d-464b-bf66-03b490fea479" name="oldField" direction="In" isUnique="false">
                   <elementDefinition Id="531047e4-1ec2-4811-baa6-5c66b03a1f3b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cce9f2ee-dcfd-432e-b153-6b716ee6705b" name="field" direction="In">
+                  <elementDefinition Id="34741858-36f0-4693-9613-169f820419d6" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6fda4d0c-2f2e-4605-b870-e83af8a6da68" LastKnownName="IField" />
                   </type_NamedElement>
