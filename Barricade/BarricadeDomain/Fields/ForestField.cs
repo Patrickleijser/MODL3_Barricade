@@ -20,7 +20,7 @@ public class ForestField : IField
 
 	public bool CanPlace()
 	{
-		throw new System.NotImplementedException();
+        return true;
 	}
 
     public IEnumerable<IField> ConnectedFields { get; set; }
