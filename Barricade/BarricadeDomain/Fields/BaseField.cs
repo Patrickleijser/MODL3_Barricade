@@ -22,7 +22,6 @@ public abstract class BaseField : IField
         set;
     }
 
-
     public bool IsFirstRow
     {
         get;
@@ -47,12 +46,27 @@ public abstract class BaseField : IField
 	public void RemoveMoveable(IMoveable moveable)
 	{
         Moveables.Remove(moveable);
-        //moveable.Position = moveable.Position;
 	}
 
-	public virtual bool CanPlace()
+    public virtual bool CanPlace(IMoveable moveable)
 	{
-        return true;
+        if (moveable == typeof(Barricade))
+        {
+            if (Moveables != null) {
+                return false;
+            }
+            else
+            {
+                if (this.IsFirstRow)
+                    return false;
+                else
+                    return true;
+            }
+        }
+        else
+        {
+            return true;
+        }
     }
     #endregion
 

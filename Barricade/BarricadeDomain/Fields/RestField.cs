@@ -5,7 +5,7 @@ using System.Text;
 
 public class RestField : BaseField
 {
-    public override bool CanPlace()
+    public override bool CanPlace(IMoveable moveable)
     {
         if (Moveables != null)
             return false;

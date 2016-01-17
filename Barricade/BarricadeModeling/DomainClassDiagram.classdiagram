@@ -806,6 +806,14 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9c642011-6ff3-4768-a38d-ce56b46c5589" name="moveable" direction="In">
+                  <elementDefinition Id="5cea69ce-91c4-4ffa-a978-fb2ef69ec9b0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e9a2164-dce5-4860-aa45-0e90897a0bca" LastKnownName="IMoveable" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperations>
@@ -1021,6 +1029,14 @@
                   <elementDefinition Id="fa952873-1efc-4705-befb-b97aaca5af34" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="97380ca1-1d9a-4587-bb28-570a7bc6aac3" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="63422df7-68e8-4c0b-999c-b27f88fc4157" name="moveable" direction="In">
+                  <elementDefinition Id="577daa25-b6ed-46b7-b634-a413434c4fef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e9a2164-dce5-4860-aa45-0e90897a0bca" LastKnownName="IMoveable" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1335,6 +1351,14 @@
                   <elementDefinition Id="499465ad-be98-401f-bd98-a1b545421992" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="97380ca1-1d9a-4587-bb28-570a7bc6aac3" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="18431684-e85a-4a1a-9012-d2d664c776ea" name="moveable" direction="In">
+                  <elementDefinition Id="658a7654-2a83-4e45-bd86-31f6310f95d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e9a2164-dce5-4860-aa45-0e90897a0bca" LastKnownName="IMoveable" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>

@@ -24,7 +24,7 @@ public interface IField
 
     void RemoveMoveable(IMoveable moveable);
 
-	bool CanPlace();
+    bool CanPlace(IMoveable moveable);
     #endregion
 
 }
