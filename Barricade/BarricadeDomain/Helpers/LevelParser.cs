@@ -54,26 +54,38 @@ namespace BarricadeDomain.Helpers
 
                     IField field = CastToIField(xmlField.Attributes["type"].Value, xmlField.SelectSingleNode("CoordX").InnerText, xmlField.SelectSingleNode("CoordY").InnerText, xmlField.SelectSingleNode("IsFirstRow").InnerText, xmlField.SelectSingleNode("IsVillage").InnerText);
                     List<IField> connectedFields = new List<IField>();
-                    XmlNodeList xmlConnectedFields = xmlRow.SelectNodes("connectedfields");
+                    XmlNodeList xmlConnectedFields = xmlField.SelectNodes("connectedfields");
 
+                    // First add connected fields from CSV data
                     foreach (XmlNode xmlConnectedField in xmlConnectedFields)
                     {
-                        IField connectedField = CastToIField(xmlConnectedField.Attributes["type"].Value, xmlConnectedField.SelectSingleNode("CoordX").InnerText, xmlConnectedField.SelectSingleNode("CoordY").InnerText, xmlConnectedField.SelectSingleNode("IsFirstRow").InnerText, xmlConnectedField.SelectSingleNode("IsVillage").InnerText);
-                        connectedFields.Add(connectedField);
+                        XmlNodeList xmlSubFields = xmlConnectedField.SelectNodes("IField");
+                        foreach (XmlNode xmlSubField in xmlSubFields)
+                        {
+                            IField connectedField = CastToIField(xmlSubField.Attributes["type"].Value, xmlSubField.SelectSingleNode("CoordX").InnerText, xmlSubField.SelectSingleNode("CoordY").InnerText, xmlSubField.SelectSingleNode("IsFirstRow").InnerText, xmlSubField.SelectSingleNode("IsVillage").InnerText);
+                            connectedFields.Add(connectedField); 
+                        }
                     }
 
-                   /* foreach (IField loopField in AllFields)
+                    // Connect siblings
+                    XmlNode prevSibling = xmlField.PreviousSibling;
+                    XmlNode nextSibling = xmlField.NextSibling;
+
+                    if (prevSibling != null)
                     {
-                        foreach (IField loopConnectedField in loopField.ConnectedFields)
-                        {
-                            
-                        }
-                    }*/
+                        IField prevField = CastToIField(prevSibling.Attributes["type"].Value, prevSibling.SelectSingleNode("CoordX").InnerText, prevSibling.SelectSingleNode("CoordY").InnerText, prevSibling.SelectSingleNode("IsFirstRow").InnerText, prevSibling.SelectSingleNode("IsVillage").InnerText);
+                        connectedFields.Add(prevField); 
+                    }
 
+                    if (nextSibling != null)
+                    {
+                        IField nextField = CastToIField(nextSibling.Attributes["type"].Value, nextSibling.SelectSingleNode("CoordX").InnerText, nextSibling.SelectSingleNode("CoordY").InnerText, nextSibling.SelectSingleNode("IsFirstRow").InnerText, nextSibling.SelectSingleNode("IsVillage").InnerText);
+                        connectedFields.Add(nextField);
+                    }
+
+                    // Add connected fields to IField object
                     field.ConnectedFields = connectedFields;
-
-                    //AllFields.Select(f => f.ConnectedFields).First().Where(cf => cf.CoordX == field.CoordX && cf.CoordY == field.CoordY);
-
+                    
                     AllFields.Add(field);
                 }
             }

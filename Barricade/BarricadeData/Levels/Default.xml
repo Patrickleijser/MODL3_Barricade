@@ -236,6 +236,7 @@
       <IsVillage>false</IsVillage>
       <connectedfields>
         <IField type="restfield">
+          <IsFirstRow>false</IsFirstRow>
           <CoordX>0</CoordX>
           <CoordY>3</CoordY>
           <IsVillage>false</IsVillage>
