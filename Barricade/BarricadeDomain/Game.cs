@@ -12,6 +12,8 @@ public class Game
     #region Properties
     public Player activePlayer { get; set; }
     public IEnumerable<Player> Players { get; set; }
+
+    public List<IField> fields;
     #endregion
 
     #region Constructor
@@ -60,7 +62,6 @@ public class Game
         Random r = new Random();
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
-        
     }
 
     public void Play()
