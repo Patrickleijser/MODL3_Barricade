@@ -1,11 +1,11 @@
-﻿using BarricadeData;
-using BarricadeDomain.Helpers;
+﻿using BarricadeDomain.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using BarricadeData;
 
 public class Game
 {
@@ -55,9 +55,8 @@ public class Game
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
         // Get and parse level
-        Level level = new Level("Default");
-        LevelParser levelParser = new LevelParser(level.GetLevelXml());
-
+          Level level = new Level("Default");
+          LevelParser levelParser = new LevelParser(level.GetLevelXml());
     }
 
     public void Play()

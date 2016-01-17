@@ -47,6 +47,7 @@ namespace BarricadeConsole
         {
             while (true)
             {
+                
                 ExecuteTurn();
                 SwitchTurn();
             }
@@ -55,12 +56,15 @@ namespace BarricadeConsole
         private void ExecuteTurn()
         {
             int diceNumber = _game.ThrowDice();
-            Console.WriteLine("");
+            Console.WriteLine("Throwing dice......");
+            Console.WriteLine(_game.activePlayer.Name+" threw "+diceNumber);
+            Console.WriteLine("Choose pawn:");
+            Console.ReadLine();
         }
 
         private void SwitchTurn()
         {
-
+            _game.ChangeTurn();
         }
     }
 }
