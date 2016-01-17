@@ -49,7 +49,7 @@ namespace BarricadeConsole
         {
             while (true)
             {
-                _board.DrawBoard(_game.fields);
+                _board.DrawBoard(_game.Fields);
                 ExecuteTurn();
                 SwitchTurn();
             }
