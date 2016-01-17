@@ -30,6 +30,7 @@ public class Game
         // Get and parse level
         Level level = new Level("Default");
         LevelParser levelParser = new LevelParser(level.GetLevelXml());
+        fields = levelParser.AllFields;
 
         // Get all colors
         List<Color> colors = new List<Color>();

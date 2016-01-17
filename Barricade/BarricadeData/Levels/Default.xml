@@ -465,7 +465,7 @@
   <row nr="5">
     <IField type="forestfield">
       <IsFirstRow>false</IsFirstRow>
-      <CoordX>10</CoordX>
+      <CoordX>5</CoordX>
       <CoordY>4</CoordY>
       <IsVillage>false</IsVillage>
       <connectedfields>
@@ -836,6 +836,14 @@
       <CoordX>5</CoordX>
       <CoordY>10</CoordY>
       <IsVillage>false</IsVillage>
+      <connectedfields>
+        <IField type="field">
+          <IsFirstRow>false</IsFirstRow>
+          <CoordX>5</CoordX>
+          <CoordY>9</CoordY>
+          <IsVillage>true</IsVillage>
+        </IField>
+      </connectedfields>
     </IField>
   </row>
 </gameboard>
