@@ -38,7 +38,33 @@ namespace BarricadeConsole
                                 s += "(F) ";
                                 break;
                             default:
-                                s += "( ) ";
+                                if (selected.Moveables.Count != 0 && selected.Moveables.First().GetType().ToString() == "Barricade")
+                                {
+                                    s += "(B) ";
+                                }
+                                if (selected.Moveables.Count != 0 && selected.Moveables.First().GetType().ToString() == "Pawn")
+                                {
+                                    Pawn selectedPawn = (Pawn)selected.Moveables.First();
+                                    switch (selectedPawn.Color)
+                                    {
+                                        case Color.Red:
+                                            s += "(1) ";
+                                            break;
+                                        case Color.Blue:
+                                            s += "(2) ";
+                                            break;
+                                        case Color.Yellow:
+                                            s += "(3) ";
+                                            break;
+                                        case Color.Green:
+                                            s += "(4) ";
+                                            break;
+                                    }
+                                }
+                                if (selected.Moveables.Count == 0)
+                                {
+                                    s += "( ) ";
+                                }
                                 break;
                         }
                     }
@@ -53,5 +79,6 @@ namespace BarricadeConsole
                 Console.WriteLine(line);
             }
         }
+
     }
 }
