@@ -2399,65 +2399,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="f907a325-2b3a-4d63-a449-1893472ca2ea"
-            name="PlacePawn"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="9c9107f5-2139-44eb-b23f-5cfe2694baa2"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="88b65bc2-f1dc-4dba-8d23-6f875e4ae457">
-                    <propertyInstance
-                      Id="4251d3f6-39bb-4307-98ad-24b8833cdce5"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="00ef0b1b-873f-473c-bb84-05d405af30d8">
-                    <propertyInstance
-                      Id="56c6723a-da48-413c-ad72-39ec85ad952b"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e610ab3d-c02d-4188-89af-ec17d007be89">
-                    <propertyInstance
-                      Id="b91da135-cd6a-4b8b-b4c6-619fb06e4a01"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6e97151a-1a40-4215-a3c5-a55a125af87e">
-                    <propertyInstance
-                      Id="b63b42ff-9336-47b1-abe4-165ecbfabf45"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="befef677-6dcf-4b52-864b-1ce73c8a684e">
-                    <propertyInstance
-                      Id="e8464b80-b6db-4b4a-8e98-c2807594fc1e"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e540ce7f-faa4-4059-a402-bbb58514975f">
-                    <propertyInstance
-                      Id="b27f23c7-2746-4212-9993-25f970b8ffe5"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

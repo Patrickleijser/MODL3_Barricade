@@ -44,11 +44,6 @@ public class Player
         Pawn p = Pawns.ElementAt(nr-1);
         return p;
 	}
-
-	public void PlacePawn()
-	{
-		throw new System.NotImplementedException();
-    }
     #endregion
 
 }
