@@ -39,16 +39,9 @@ public class Player
     #endregion
 
     #region Methods
-    public Pawn ChoosePawn()
+    public Pawn ChoosePawn(int nr)
 	{
-        bool unvalidPawn = true;
-        Console.WriteLine("Choose Pawn: ");
-        int pawnNr = 0;
-        while (unvalidPawn)
-        {
-            unvalidPawn = Int32.TryParse(Console.ReadLine(), out pawnNr);
-        }
-        Pawn p = Pawns.ElementAt(pawnNr-1);
+        Pawn p = Pawns.ElementAt(nr-1);
         return p;
 	}
 
