@@ -17,12 +17,8 @@ public class Game
     #region Constructor
     public Game(List<Player> players)
     {
-        if(players.Count > 2 && players.Count <= 4)
-        {
-            Players = players;
-            InitGame();
-        }
-
+        Players = players;
+        InitGame();
     }
     #endregion
 
@@ -66,7 +62,10 @@ public class Game
 
     public void Play()
 	{
-		// Game loop here?
+		while(true)
+        {
+            var input = Console.ReadLine();
+        }
 	}
 
 	public int ThrowDice()
@@ -86,6 +85,16 @@ public class Game
             }
         }
 	}
+
+    public void ChoosePawn(int nr)
+    {
+        Pawn selected = activePlayer.ChoosePawn(nr);
+    }
+
+    public void PlacePawn()
+    {
+        activePlayer.PlacePawn();
+    }
     #endregion
 
 }
