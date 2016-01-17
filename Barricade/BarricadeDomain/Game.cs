@@ -72,7 +72,9 @@ public class Game
                 Pawn newPawn = new Pawn { Color = colors.ElementAt(i) };
                 int coordx = Players.ElementAt(i).StartFields.ElementAt(j).CoordX;
                 int y = Players.ElementAt(i).StartFields.ElementAt(j).CoordY;
-                levelParser.AllFields.Where(x => x.CoordX == Players.ElementAt(i).StartFields.ElementAt(j).CoordX && x.CoordY == Players.ElementAt(i).StartFields.ElementAt(j).CoordY).First().Moveables.Add(newPawn);
+                IField startField = levelParser.AllFields.Where(x => x.CoordX == Players.ElementAt(i).StartFields.ElementAt(j).CoordX && x.CoordY == Players.ElementAt(i).StartFields.ElementAt(j).CoordY).First();
+                newPawn.Position = startField;
+                startField.Moveables.Add(newPawn);
                 pawns.Add(newPawn);
             }
             Players.ElementAt(i).Pawns = pawns;
@@ -84,6 +86,14 @@ public class Game
         Random r = new Random();
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
+    }
+
+    public Boolean validMove(IField old,IField newField,int steps)
+    {
+        for (int i = 0; i < steps; i++)
+        {
+        }
+        return false;
     }
 
     public void Play()
@@ -112,9 +122,10 @@ public class Game
         }
 	}
 
-    public void ChoosePawn(int nr)
+    public Pawn ChoosePawn(int nr)
     {
         Pawn selected = activePlayer.ChoosePawn(nr);
+        return selected;
     }
     #endregion
 

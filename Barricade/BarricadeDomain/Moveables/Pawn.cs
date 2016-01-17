@@ -14,6 +14,7 @@ public class Pawn : IMoveable
         IMoveable moveable = oldField.Moveables.First();
         field.PlaceMoveable(moveable);
         oldField.RemoveMoveable(moveable);
+        Position = field;
 	}
 
 }
