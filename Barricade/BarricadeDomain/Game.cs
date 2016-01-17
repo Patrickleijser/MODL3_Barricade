@@ -25,6 +25,10 @@ public class Game
     #region Methods
     private void InitGame()
     {
+        // Get and parse level
+        Level level = new Level("Default");
+        LevelParser levelParser = new LevelParser(level.GetLevelXml());
+
         // Get all colors
         List<Color> colors = new List<Color>();
         foreach (Color color in Enum.GetValues(typeof(Color)))
@@ -50,13 +54,13 @@ public class Game
             player.Pawns = pawns;
         }
 
+        // TODO: startfield setten
+
         // Selected starting player
         Random r = new Random();
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
-        // Get and parse level
-          Level level = new Level("Default");
-          LevelParser levelParser = new LevelParser(level.GetLevelXml());
+        
     }
 
     public void Play()
@@ -97,4 +101,3 @@ public class Game
     #endregion
 
 }
-

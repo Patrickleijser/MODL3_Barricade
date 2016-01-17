@@ -5,17 +5,19 @@ using System.Text;
 
 public class ForestField : IField
 {
-	public IEnumerable<Pawn> Pawns { get; set; }
+    public IMoveable Moveable { get; set; }
 
-	public void PlacePawn(Pawn pawn)
-	{
-		throw new System.NotImplementedException();
-	}
+    public void PlaceMoveable(IMoveable moveable)
+    {
+        if (Moveable != null)
+            RemoveMoveable(Moveable);
+        Moveable = moveable;
+    }
 
-	public void RemovePawn(Pawn pawn)
-	{
-		throw new System.NotImplementedException();
-	}
+    public void RemoveMoveable(IMoveable moveable)
+    {
+        moveable.Position = moveable.Position;
+    }
 
 	public bool CanPlace()
 	{
@@ -48,5 +50,7 @@ public class ForestField : IField
         get;
         set;
     }
+
+
 }
 

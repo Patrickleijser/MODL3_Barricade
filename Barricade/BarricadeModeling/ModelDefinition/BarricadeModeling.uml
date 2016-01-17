@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="02ef3ac3-7991-41e4-8116-75a6ea3435f5"
   name="BarricadeModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -872,7 +872,7 @@
         <ownedOperations>
           <operation
             Id="e8f2d5e7-2cd9-47b6-bbb6-9839daccd326"
-            name="PlacePawn"
+            name="PlaceMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -931,13 +931,14 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c519a53e-50af-44c6-8e7f-aec35e568db2"
-                  name="pawn"
-                  direction="In">
+                  Id="c09803a2-f2b4-4341-8da0-1bbda09c6168"
+                  name="moveable"
+                  direction="In"
+                  isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -946,7 +947,7 @@
           </operation>
           <operation
             Id="643148d6-acb7-41b7-b879-8015ad955c98"
-            name="RemovePawn"
+            name="RemoveMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="true"
@@ -1006,12 +1007,12 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="e47abd3b-6579-4ca0-8bbc-f736ad39d4ba"
-                  name="pawn"
+                  name="moveable"
                   direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1156,7 +1157,7 @@
         <ownedAttributesInternal>
           <property
             Id="c05be859-ac2e-4d4e-8833-a860082f6bbd"
-            name="Pawn"
+            name="Moveable"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1223,9 +1224,9 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <classMoniker
-                Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                LastKnownName="Pawn"
+              <interfaceMoniker
+                Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                LastKnownName="IMoveable"
                 LastKnownLocation="BarricadeModeling.uml" />
             </type_NamedElement>
           </property>
@@ -1233,7 +1234,7 @@
         <ownedOperationsInternal>
           <operation
             Id="3eb154f5-feb0-46b5-96f4-fc42a155ad8c"
-            name="PlacePawn"
+            name="PlaceMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1296,9 +1297,9 @@
                   name="pawn"
                   direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1307,7 +1308,7 @@
           </operation>
           <operation
             Id="cb3fabd7-95f9-4334-9167-ca6b78a9d84d"
-            name="RemovePawn"
+            name="RemoveMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1370,9 +1371,9 @@
                   name="pawn"
                   direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1730,7 +1731,7 @@
         <ownedOperationsInternal>
           <operation
             Id="def57fcb-89cb-4250-aa97-76c4901d4730"
-            name="PlacePawn"
+            name="PlaceMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1793,9 +1794,9 @@
                   name="pawn"
                   direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1804,7 +1805,7 @@
           </operation>
           <operation
             Id="11cf2d08-1b55-4642-b3e4-140aae10278f"
-            name="RemovePawn"
+            name="RemoveMoveable"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1867,9 +1868,9 @@
                   name="pawn"
                   direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="9450d6c6-6404-4fca-8897-59cecfaf03a2"
-                      LastKnownName="Pawn"
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -2784,81 +2785,6 @@
                 LastKnownLocation="BarricadeModeling.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="9363e3c5-aceb-45bf-a493-eb4a44fdf44b"
-            name="Position"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="838dc175-66e6-4179-81a7-047484cc3238"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7cf596d9-a687-4895-bab5-a07e85b5b8cd">
-                    <propertyInstance
-                      Id="6da77db6-c670-496d-ae06-14feb0f466a7"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="4c50e25b-cb1f-4778-bae8-91a618e8641c">
-                    <propertyInstance
-                      Id="7a6ebac6-571a-48ed-a3b4-270cb6b318e8"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="bb10c803-5869-4425-a826-eab8b6ffa8e8">
-                    <propertyInstance
-                      Id="4ba03eeb-0981-4e81-9a00-33166cf3977f"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c0b85a27-4f18-4761-ad8b-9ddcb45d393b">
-                    <propertyInstance
-                      Id="277504eb-a14b-4a18-b8aa-b1ceb4811bb4"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ac16cd03-43e0-4447-a63f-0fa2b19a0717">
-                    <propertyInstance
-                      Id="691d338b-ee17-4d0d-a03d-800d3db4b195"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ba927d61-b5af-405e-b911-8f6f0a8e0619">
-                    <propertyInstance
-                      Id="4a33375d-772a-4c32-bbba-0663b8d17b37"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d0810255-407d-4ae0-8e21-44959950b982">
-                    <propertyInstance
-                      Id="d1205075-125b-40fc-b1a1-669946b71f9e"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <interfaceMoniker
-                Id="0cc66211-05e4-4026-85da-acd34af05fd5"
-                LastKnownName="IField"
-                LastKnownLocation="BarricadeModeling.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -3032,6 +2958,83 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedAttributes>
+          <property
+            Id="e0cac239-919b-4bf6-9e93-09c921d5de09"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a6d7ba1-362a-43eb-9e2e-c77a4310f9f4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bed1ed75-fe1a-4110-88c6-3a87ccec363c">
+                    <propertyInstance
+                      Id="4ac0771d-4d10-48fd-a1e2-82c1ef343bf9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed775b80-b7ab-441e-9d31-05ddfc4d755f">
+                    <propertyInstance
+                      Id="c3024370-0d7a-4768-90d0-0956c11d0606"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9c0ea1c-b065-4b68-99e3-e0bb032c7cd3">
+                    <propertyInstance
+                      Id="7fcb614a-a4d8-4869-972f-110ab9d6deec"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9d2b547-e54d-4f6f-adc2-96e8292772bc">
+                    <propertyInstance
+                      Id="69874643-e2cd-4123-af7a-bfe86d9b0c59"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9c3dd74-fcd4-4f65-988c-8047f21b81e8">
+                    <propertyInstance
+                      Id="885effe2-b62b-4ef5-be41-855dd7566df9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f5ebd13-f8c6-4601-835f-e99ee4b4e427">
+                    <propertyInstance
+                      Id="74082c72-acbf-4a84-9eb9-00d8ae3b1a29"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b2a165d-755c-44a5-87a7-655d4927f5b9">
+                    <propertyInstance
+                      Id="df143296-a1ab-4fa5-a977-f804077f4bce"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0cc66211-05e4-4026-85da-acd34af05fd5"
+                LastKnownName="IField"
+                LastKnownLocation="BarricadeModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
         <ownedOperations>
           <operation
             Id="da9f70f6-9577-4117-895d-1e07ce9eea9d"

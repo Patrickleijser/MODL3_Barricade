@@ -9,8 +9,6 @@ public class Pawn : IMoveable
 
 	public IField Position { get; set; }
 
-	public IField IField { get; set; }
-
 	public void Move(IField field)
 	{
 		throw new System.NotImplementedException();
