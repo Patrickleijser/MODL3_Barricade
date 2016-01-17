@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public interface IField 
+public interface IField
 {
+    #region Properties
     int CoordX { get; set; }
 
     int CoordY { get; set; }
@@ -16,12 +17,15 @@ public interface IField
 	IEnumerable<IField> ConnectedFields { get; set; }
     
     List<IMoveable> Moveables { get; set; }
-    
-	void PlaceMoveable(IMoveable moveable);
+    #endregion
+
+    #region Methods
+    void PlaceMoveable(IMoveable moveable);
 
     void RemoveMoveable(IMoveable moveable);
 
 	bool CanPlace();
+    #endregion
 
 }
 

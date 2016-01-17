@@ -5,23 +5,7 @@ using System.Text;
 
 public abstract class BaseField : IField
 {
-     
-	public void PlaceMoveable(IMoveable moveable)
-	{
-        /*if (Moveable != null)
-            RemoveMoveable(Moveable);
-        Moveable = moveable;*/
-	}
-
-	public void RemoveMoveable(IMoveable moveable)
-	{
-        //moveable.Position = moveable.Position;
-	}
-
-	public virtual bool CanPlace()
-	{
-        return true;
-	}
+    #region Properties
     public IEnumerable<IField> ConnectedFields { get; set; }
 
     public List<IMoveable> Moveables { get; set; }
@@ -50,5 +34,26 @@ public abstract class BaseField : IField
         get;
         set;
     }
+    #endregion
+
+    #region Methods
+    public void PlaceMoveable(IMoveable moveable)
+	{
+        /*if (Moveable != null)
+            RemoveMoveable(Moveable);
+        Moveable = moveable;*/
+	}
+
+	public void RemoveMoveable(IMoveable moveable)
+	{
+        //moveable.Position = moveable.Position;
+	}
+
+	public virtual bool CanPlace()
+	{
+        return true;
+    }
+    #endregion
+
 }
 

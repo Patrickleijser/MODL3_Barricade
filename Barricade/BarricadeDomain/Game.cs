@@ -13,7 +13,7 @@ public class Game
     public Player activePlayer { get; set; }
     public IEnumerable<Player> Players { get; set; }
 
-    public List<IField> fields;
+    public List<IField> Fields;
     #endregion
 
     #region Constructor
@@ -30,7 +30,7 @@ public class Game
         // Get and parse level
         Level level = new Level("Default");
         LevelParser levelParser = new LevelParser(level.GetLevelXml());
-        fields = levelParser.AllFields;
+        Fields = levelParser.AllFields;
 
         // Get all colors
         List<Color> colors = new List<Color>();
@@ -39,25 +39,42 @@ public class Game
 		    colors.Add(color);
 	    }
 
-        // Set player colors
+        // Set player settings
         for (int i = 0; i < Players.Count(); i++)
         {
+            // Set color
             Players.ElementAt(i).Color = colors.ElementAt(i);
-        }
 
-        // Create player pawns
-        foreach (Player player in Players)
-        {
+            // Add pawns
             List<Pawn> pawns = new List<Pawn>();
-            for (int i = 0; i < 4; i++)
+            for (int j = 0; j < 4; j++)
             {
-                Pawn newPawn = new Pawn {Color = player.Color};
+                Pawn newPawn = new Pawn { Color = colors.ElementAt(i) };
                 pawns.Add(newPawn);
             }
-            player.Pawns = pawns;
-        }
+            Players.ElementAt(i).Pawns = pawns;
 
-        // TODO: startfield setten
+            // Set start fields
+            switch (i)
+            {
+                case 0:
+                    Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerOne;
+                    break;
+                case 1:
+                    Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerTwo;
+                    break;
+                case 2:
+                    Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerThree;
+                    break;
+                case 3:
+                    Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerFour;
+                    break;
+                default:
+                    Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerOne;
+                    break;
+            }
+            
+        }
 
         // Selected starting player
         Random r = new Random();
