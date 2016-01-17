@@ -53,6 +53,7 @@ namespace BarricadeDomain.Helpers
                 {
 
                     IField field = CastToIField(xmlField.Attributes["type"].Value, xmlField.SelectSingleNode("CoordX").InnerText, xmlField.SelectSingleNode("CoordY").InnerText, xmlField.SelectSingleNode("IsFirstRow").InnerText, xmlField.SelectSingleNode("IsVillage").InnerText);
+                    field.Moveables = new List<IMoveable>();
                     List<IField> connectedFields = new List<IField>();
                     XmlNodeList xmlConnectedFields = xmlField.SelectNodes("connectedfields");
 
@@ -61,8 +62,6 @@ namespace BarricadeDomain.Helpers
                     {
 
                         IMoveable barricade = new Barricade { Position=field };
-                        List<IMoveable> moveables = new List<IMoveable>();
-                        field.Moveables = moveables;
                         field.Moveables.Add(barricade);
                     }
 

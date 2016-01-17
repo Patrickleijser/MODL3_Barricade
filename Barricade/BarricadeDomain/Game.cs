@@ -45,15 +45,6 @@ public class Game
             // Set color
             Players.ElementAt(i).Color = colors.ElementAt(i);
 
-            // Add pawns
-            List<Pawn> pawns = new List<Pawn>();
-            for (int j = 0; j < 4; j++)
-            {
-                Pawn newPawn = new Pawn { Color = colors.ElementAt(i) };
-                pawns.Add(newPawn);
-            }
-            Players.ElementAt(i).Pawns = pawns;
-
             // Set start fields
             switch (i)
             {
@@ -73,6 +64,19 @@ public class Game
                     Players.ElementAt(i).StartFields = levelParser.StartFieldsPlayerOne;
                     break;
             }
+
+            // Add pawns
+            List<Pawn> pawns = new List<Pawn>();
+            for (int j = 0; j < 4; j++)
+            {
+                Pawn newPawn = new Pawn { Color = colors.ElementAt(i) };
+                int coordx = Players.ElementAt(i).StartFields.ElementAt(j).CoordX;
+                int y = Players.ElementAt(i).StartFields.ElementAt(j).CoordY;
+                levelParser.AllFields.Where(x => x.CoordX == Players.ElementAt(i).StartFields.ElementAt(j).CoordX && x.CoordY == Players.ElementAt(i).StartFields.ElementAt(j).CoordY).First().Moveables.Add(newPawn);
+                pawns.Add(newPawn);
+            }
+            Players.ElementAt(i).Pawns = pawns;
+
             
         }
 
