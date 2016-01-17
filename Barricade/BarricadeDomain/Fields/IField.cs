@@ -15,6 +15,8 @@ public interface IField
 
 	IEnumerable<IField> ConnectedFields { get; set; }
     
+    List<IMoveable> Moveables { get; set; }
+    
 	void PlaceMoveable(IMoveable moveable);
 
     void RemoveMoveable(IMoveable moveable);

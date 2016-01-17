@@ -5,18 +5,17 @@ using System.Text;
 
 public abstract class BaseField : IField
 {
-	public IMoveable Moveable { get; set; }
      
 	public void PlaceMoveable(IMoveable moveable)
 	{
-        if (Moveable != null)
+        /*if (Moveable != null)
             RemoveMoveable(Moveable);
-        Moveable = moveable;
+        Moveable = moveable;*/
 	}
 
 	public void RemoveMoveable(IMoveable moveable)
 	{
-        moveable.Position = moveable.Position;
+        //moveable.Position = moveable.Position;
 	}
 
 	public virtual bool CanPlace()
@@ -24,6 +23,8 @@ public abstract class BaseField : IField
         return true;
 	}
     public IEnumerable<IField> ConnectedFields { get; set; }
+
+    public List<IMoveable> Moveables { get; set; }
 
     public int CoordX
     {

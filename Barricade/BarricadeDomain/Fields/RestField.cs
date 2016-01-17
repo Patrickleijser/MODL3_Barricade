@@ -7,10 +7,11 @@ public class RestField : BaseField
 {
     public override bool CanPlace()
     {
-        if (Moveable != null)
+        /*if (Moveable != null)
             return false;
         else
-            return true;
+            return true;*/
+        return true;
     }
 }
 

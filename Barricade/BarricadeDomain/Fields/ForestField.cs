@@ -5,18 +5,17 @@ using System.Text;
 
 public class ForestField : IField
 {
-    public IMoveable Moveable { get; set; }
 
     public void PlaceMoveable(IMoveable moveable)
     {
-        if (Moveable != null)
+        /*if (Moveable != null)
             RemoveMoveable(Moveable);
-        Moveable = moveable;
+        Moveable = moveable;*/
     }
 
     public void RemoveMoveable(IMoveable moveable)
     {
-        moveable.Position = moveable.Position;
+        //moveable.Position = moveable.Position;
     }
 
 	public bool CanPlace()
@@ -25,6 +24,8 @@ public class ForestField : IField
 	}
 
     public IEnumerable<IField> ConnectedFields { get; set; }
+
+    public List<IMoveable> Moveables { get; set; }
 
     public int CoordX
     {
