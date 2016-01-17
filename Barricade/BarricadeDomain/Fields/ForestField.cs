@@ -5,24 +5,7 @@ using System.Text;
 
 public class ForestField : IField
 {
-
-    public void PlaceMoveable(IMoveable moveable)
-    {
-        /*if (Moveable != null)
-            RemoveMoveable(Moveable);
-        Moveable = moveable;*/
-    }
-
-    public void RemoveMoveable(IMoveable moveable)
-    {
-        //moveable.Position = moveable.Position;
-    }
-
-	public bool CanPlace()
-	{
-        return true;
-	}
-
+    #region Properties
     public IEnumerable<IField> ConnectedFields { get; set; }
 
     public List<IMoveable> Moveables { get; set; }
@@ -39,7 +22,6 @@ public class ForestField : IField
         set;
     }
 
-
     public bool IsFirstRow
     {
         get;
@@ -51,7 +33,27 @@ public class ForestField : IField
         get;
         set;
     }
+    #endregion
 
+    #region Methods
+    public void PlaceMoveable(IMoveable moveable)
+    {
+        Moveables.Add(moveable);
+    }
+
+    public void RemoveMoveable(IMoveable moveable)
+    {
+        Moveables.Remove(moveable);
+    }
+
+    public bool CanPlace(IMoveable moveable)
+	{
+        if (moveable == typeof(Pawn))
+            return true;
+        else
+            return false;
+    }
+    #endregion
 
 }
 

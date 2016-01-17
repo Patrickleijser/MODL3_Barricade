@@ -1120,6 +1120,19 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5cea69ce-91c4-4ffa-a978-fb2ef69ec9b0"
+                  name="moveable"
+                  direction="In">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperations>
@@ -1400,6 +1413,19 @@
                     <primitiveTypeMoniker
                       Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
                       LastKnownName="Boolean"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="577daa25-b6ed-46b7-b634-a413434c4fef"
+                  name="moveable"
+                  direction="In">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1808,6 +1834,19 @@
                     <primitiveTypeMoniker
                       Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
                       LastKnownName="Boolean"
+                      LastKnownLocation="BarricadeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="658a7654-2a83-4e45-bd86-31f6310f95d1"
+                  name="moveable"
+                  direction="In">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="466fce64-0586-42d2-b5d5-25c7f9e203ac"
+                      LastKnownName="IMoveable"
                       LastKnownLocation="BarricadeModeling.uml" />
                   </type_NamedElement>
                 </parameter>
