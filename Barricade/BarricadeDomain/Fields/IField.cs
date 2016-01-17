@@ -15,9 +15,9 @@ public interface IField
 
 	IEnumerable<IField> ConnectedFields { get; set; }
     
-	void PlacePawn(Pawn pawn);
+	void PlaceMoveable(IMoveable moveable);
 
-	void RemovePawn(Pawn pawn);
+    void RemoveMoveable(IMoveable moveable);
 
 	bool CanPlace();
 

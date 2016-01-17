@@ -67,7 +67,7 @@ namespace BarricadeDomain.Helpers
                         }
                     }
 
-                    // Connect siblings
+                    // Connect siblings if no startfield
                     if (xmlField.Attributes["type"].Value == "startfield")
                     {
                         switch (xmlField.Attributes["playerid"].Value)

@@ -7,7 +7,7 @@ public class RestField : BaseField
 {
     public override bool CanPlace()
     {
-        if (Pawn != null)
+        if (Moveable != null)
             return false;
         else
             return true;

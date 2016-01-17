@@ -5,18 +5,18 @@ using System.Text;
 
 public abstract class BaseField : IField
 {
-	public Pawn Pawn { get; set; }
-
-	public void PlacePawn(Pawn pawn)
+	public IMoveable Moveable { get; set; }
+     
+	public void PlaceMoveable(IMoveable moveable)
 	{
-        if (Pawn != null)
-            RemovePawn(Pawn);
-        Pawn = pawn;
+        if (Moveable != null)
+            RemoveMoveable(Moveable);
+        Moveable = moveable;
 	}
 
-	public void RemovePawn(Pawn pawn)
+	public void RemoveMoveable(IMoveable moveable)
 	{
-        pawn.Position = pawn.IField;
+        moveable.Position = moveable.Position;
 	}
 
 	public virtual bool CanPlace()
