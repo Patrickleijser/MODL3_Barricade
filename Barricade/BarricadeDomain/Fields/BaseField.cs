@@ -39,13 +39,14 @@ public abstract class BaseField : IField
     #region Methods
     public void PlaceMoveable(IMoveable moveable)
 	{
-        /*if (Moveable != null)
-            RemoveMoveable(Moveable);
-        Moveable = moveable;*/
+        if (Moveables != null)
+            RemoveMoveable(Moveables.First());
+        Moveables.Add(moveable);
 	}
 
 	public void RemoveMoveable(IMoveable moveable)
 	{
+        Moveables.Remove(moveable);
         //moveable.Position = moveable.Position;
 	}
 

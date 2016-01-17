@@ -5,5 +5,13 @@ using System.Text;
 
 public class FinishField : BaseField
 {
+
+    public override void PlaceMoveable(IMoveable moveable)
+    {
+        if(moveable == typeof(Pawn)) {
+            // Todo : Yay you won!
+        }
+    }
+
 }
 
