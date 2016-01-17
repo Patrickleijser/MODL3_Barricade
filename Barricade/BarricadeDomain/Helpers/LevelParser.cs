@@ -15,20 +15,25 @@ namespace BarricadeDomain.Helpers
         public List<StartField> StartFieldsPlayerTwo { get; set; }
         public List<StartField> StartFieldsPlayerThree { get; set; }
         public List<StartField> StartFieldsPlayerFour { get; set; }
+        public List<IField> AllFields { get; set; }
         #endregion
 
         #region Variables
-        XmlDocument _xmlFile;
+        private XmlDocument _xmlFile;
+        private FieldFactory _fieldFactory;
         #endregion
 
         #region Constructor
         public LevelParser(XmlDocument xmlFile)
         {
             _xmlFile = xmlFile;
+            _fieldFactory = new FieldFactory();
+
             StartFieldsPlayerOne = new List<StartField>();
             StartFieldsPlayerTwo = new List<StartField>();
             StartFieldsPlayerThree = new List<StartField>();
             StartFieldsPlayerFour = new List<StartField>();
+            AllFields = new List<IField>();
 
             // Parse XML and connect the fields
             ParseXML();
@@ -38,34 +43,60 @@ namespace BarricadeDomain.Helpers
         #region Methods
         private void ParseXML()
         {
-            FieldFactory fieldFactory = new FieldFactory();
-
             XmlElement root = _xmlFile.DocumentElement;
-            XmlNodeList rows = root.SelectNodes("row");
+            XmlNodeList xmlRows = root.SelectNodes("row");
 
-            foreach (XmlNode row in rows)
+            foreach (XmlNode xmlRow in xmlRows)
             {
-                XmlNodeList fields = row.SelectNodes("IField");
-                foreach (XmlNode field in fields)
+                XmlNodeList xmlFields = xmlRow.SelectNodes("IField");
+                foreach (XmlNode xmlField in xmlFields)
                 {
-                    int x = Convert.ToInt32(field.SelectSingleNode("CoordX").InnerText);
-                    int y = Convert.ToInt32(field.SelectSingleNode("CoordY").InnerText);
-                    Boolean isFirstRow = Convert.ToBoolean(field.SelectSingleNode("IsFirstRow").InnerText);
-                    Boolean isVillage = Convert.ToBoolean(field.SelectSingleNode("IsVillage").InnerText);
 
-                    IField newField = fieldFactory.GetField(field.Attributes["type"].Value);
-                    newField.CoordX = x;
-                    newField.CoordY = y;
-                    newField.IsFirstRow = isFirstRow;
-                    newField.IsVillage = isVillage;
+                    IField field = CastToIField(xmlField.Attributes["type"].Value, xmlField.SelectSingleNode("CoordX").InnerText, xmlField.SelectSingleNode("CoordY").InnerText, xmlField.SelectSingleNode("IsFirstRow").InnerText, xmlField.SelectSingleNode("IsVillage").InnerText);
+                    List<IField> connectedFields = new List<IField>();
+                    XmlNodeList xmlConnectedFields = xmlRow.SelectNodes("connectedfields");
 
-                    ConnectFields(newField, null);
-                    
+                    foreach (XmlNode xmlConnectedField in xmlConnectedFields)
+                    {
+                        IField connectedField = CastToIField(xmlConnectedField.Attributes["type"].Value, xmlConnectedField.SelectSingleNode("CoordX").InnerText, xmlConnectedField.SelectSingleNode("CoordY").InnerText, xmlConnectedField.SelectSingleNode("IsFirstRow").InnerText, xmlConnectedField.SelectSingleNode("IsVillage").InnerText);
+                        connectedFields.Add(connectedField);
+                    }
+
+                   /* foreach (IField loopField in AllFields)
+                    {
+                        foreach (IField loopConnectedField in loopField.ConnectedFields)
+                        {
+                            
+                        }
+                    }*/
+
+                    field.ConnectedFields = connectedFields;
+
+                    //AllFields.Select(f => f.ConnectedFields).First().Where(cf => cf.CoordX == field.CoordX && cf.CoordY == field.CoordY);
+
+                    AllFields.Add(field);
                 }
             }
         }
-        private void ConnectFields(IField fieldOne, IField fieldTwo) {
-            
+
+        private IField CastToIField(String type, String coordX, String coordY, String isFirstRow, String isVillage)
+        {
+            // Create IField via factory method
+            IField field = _fieldFactory.GetField(type);
+
+            // Convert string to correct types
+            int convertedCoordX = Convert.ToInt32(coordX);
+            int convertedCoordY = Convert.ToInt32(coordY);
+            Boolean convertedIsFirstRow = Convert.ToBoolean(isFirstRow);
+            Boolean convertedIsVillage = Convert.ToBoolean(isVillage);
+
+            // Set properties
+            field.CoordX = convertedCoordX;
+            field.CoordY = convertedCoordY;
+            field.IsFirstRow = convertedIsFirstRow;
+            field.IsVillage = convertedIsVillage;
+
+            return field;
         }
         #endregion
     }
