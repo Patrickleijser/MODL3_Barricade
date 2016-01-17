@@ -1,11 +1,11 @@
-﻿using BarricadeDomain.Helpers;
+﻿using BarricadeData;
+using BarricadeDomain.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Xml;
 
 public class Game
 {
@@ -58,10 +58,9 @@ public class Game
         Random r = new Random();
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
-        // Parse level
-        XmlDocument xmlFile = new XmlDocument();
-        xmlFile.Load(@"..\..\..\BarricadeData\Default.xml");
-        LevelParser levelParser = new LevelParser(xmlFile);
+        // Get and parse level
+        Level level = new Level("Default");
+        LevelParser levelParser = new LevelParser(level.GetLevelXml());
 
     }
 
