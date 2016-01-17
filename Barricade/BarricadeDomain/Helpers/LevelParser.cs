@@ -56,6 +56,16 @@ namespace BarricadeDomain.Helpers
                     List<IField> connectedFields = new List<IField>();
                     XmlNodeList xmlConnectedFields = xmlField.SelectNodes("connectedfields");
 
+                    // Check if barricade
+                    if (xmlField.Attributes["isBarricade"] != null && xmlField.Attributes["isBarricade"].Value != null && xmlField.Attributes["isBarricade"].Value == "true")
+                    {
+
+                        IMoveable barricade = new Barricade { Position=field };
+                        List<IMoveable> moveables = new List<IMoveable>();
+                        field.Moveables = moveables;
+                        field.Moveables.Add(barricade);
+                    }
+
                     // First add connected fields from CSV data
                     foreach (XmlNode xmlConnectedField in xmlConnectedFields)
                     {
