@@ -12,6 +12,8 @@ public class Game
     #region Properties
     public Player activePlayer { get; set; }
     public IEnumerable<Player> Players { get; set; }
+
+    public List<IField> fields;
     #endregion
 
     #region Constructor
@@ -55,8 +57,9 @@ public class Game
         activePlayer = Players.ElementAt(r.Next(0, Players.Count()));
 
         // Get and parse level
-          Level level = new Level("Default");
-          LevelParser levelParser = new LevelParser(level.GetLevelXml());
+        Level level = new Level("Default");
+        LevelParser levelParser = new LevelParser(level.GetLevelXml());
+        fields = levelParser.AllFields;
     }
 
     public void Play()

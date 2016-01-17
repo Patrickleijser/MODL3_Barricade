@@ -9,6 +9,7 @@ namespace BarricadeConsole
     public class GameController
     {
         private Game _game;
+        private BoardController _board;
         private Player[] playerDeposit = new Player[] { new Player("Patrick"), new Player("Walfie"), new Player("Dikke"), new Player("Dunne") };
         public GameController()
         {
@@ -36,6 +37,7 @@ namespace BarricadeConsole
                 players.Add(playerDeposit[i]);
             }
             _game = new Game(players);
+            _board = new BoardController();
             foreach (Player player in _game.Players)
             {
                 Console.WriteLine("Player: " + player.Name + " " + player.Color);
@@ -47,7 +49,7 @@ namespace BarricadeConsole
         {
             while (true)
             {
-                
+                _board.DrawBoard(_game.fields);
                 ExecuteTurn();
                 SwitchTurn();
             }
