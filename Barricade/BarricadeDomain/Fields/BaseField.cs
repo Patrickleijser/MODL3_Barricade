@@ -38,7 +38,7 @@ public abstract class BaseField : IField
     #region Methods
     public virtual void PlaceMoveable(IMoveable moveable)
 	{
-        if (Moveables != null)
+        if (Moveables.Count != 0)
             RemoveMoveable(Moveables.First());
         Moveables.Add(moveable);
 	}
@@ -52,7 +52,8 @@ public abstract class BaseField : IField
 	{
         if (moveable == typeof(Barricade))
         {
-            if (Moveables != null) {
+            if (Moveables.Count != 0)
+            {
                 return false;
             }
             else
