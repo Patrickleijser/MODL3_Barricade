@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BarricadeData\BarricadeData.csproj">
+      <Project>{1f24beb7-571e-40b6-b7b7-356d57e6726d}</Project>
+      <Name>BarricadeData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BarricadeDomain\BarricadeDomain.csproj">
       <Project>{4db45306-3cfa-4469-8176-b4fc601f148b}</Project>
       <Name>BarricadeDomain</Name>
