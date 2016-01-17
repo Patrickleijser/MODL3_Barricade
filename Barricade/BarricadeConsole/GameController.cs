@@ -61,6 +61,29 @@ namespace BarricadeConsole
             Console.WriteLine("Throwing dice......");
             Console.WriteLine(_game.activePlayer.Name+" threw "+diceNumber);
             Console.WriteLine("Choose pawn by coord X-coord Y: ");
+            Pawn p = SelectPawn();
+            Console.WriteLine("Choose new posistion by coord X-coord Y:");
+            MovePawn(p,diceNumber);
+            
+        }
+
+        private Pawn SelectPawn()
+        {
+            int nr = -1;
+            while (true)
+            {
+                string s = Console.ReadLine();
+                Int32.TryParse(s, out nr);
+                if (nr != -1)
+                {
+                    return _game.ChoosePawn(nr);
+                }
+                Console.WriteLine("Invalid coords try again");
+            }
+        }
+
+        private void MovePawn(Pawn p,int steps)
+        {
             int coordx = -1;
             int coordy = -1;
             while (true)
@@ -70,23 +93,18 @@ namespace BarricadeConsole
                 Int32.TryParse(s[1], out coordy);
                 if (coordx != -1 && coordy != -1)
                 {
-                    break;
+                    IField targetField = _game.Fields.Where(x => x.CoordX == coordx && x.CoordY == coordy).FirstOrDefault();
+                    if (_game.validMove(p.Position,targetField,steps))
+                    {
+                        if (targetField != null && targetField.CanPlace(p))
+                        {
+                            p.Move(p.Position, targetField);// targetField.PlaceMoveable(p);
+                        }
+                        break;
+                    }
                 }
                 Console.WriteLine("Invalid coords try again");
             }
-            Console.WriteLine("Choose new posistion by coord X-coord Y:");
-            while (true)
-            {
-                string[] s = Console.ReadLine().Split('-');
-                Int32.TryParse(s[0], out coordx);
-                Int32.TryParse(s[1], out coordy);
-                if (coordx != -1 && coordy != -1)
-                {
-                    break;
-                }
-                Console.WriteLine("Invalid coords try again");
-            }
-            
         }
 
         private void SwitchTurn()
