@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <gameboard>
   <row nr="1">
-    <IField type="startfield">
+    <IField type="startfield" playerid="1">
       <CoordX>1</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -15,7 +15,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="1">
       <CoordX>2</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -29,7 +29,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="2">
       <CoordX>3</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -43,7 +43,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="2">
       <CoordX>4</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -57,7 +57,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield"  playerid="3">
       <CoordX>6</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -71,7 +71,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="3">
       <CoordX>7</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -85,7 +85,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield"  playerid="4">
       <CoordX>8</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -99,7 +99,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="4">
       <CoordX>9</CoordX>
       <CoordY>0</CoordY>
       <IsVillage>false</IsVillage>
@@ -115,7 +115,7 @@
     </IField>
   </row>
   <row nr="2">
-    <IField type="startfield">
+    <IField type="startfield" playerid="1">
       <CoordX>1</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -129,7 +129,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="1">
       <CoordX>2</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -143,7 +143,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="2">
       <CoordX>3</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -157,7 +157,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="2">
       <CoordX>4</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -171,7 +171,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="3">
       <CoordX>6</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -185,7 +185,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="3">
       <CoordX>7</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -199,7 +199,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="4">
       <CoordX>8</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
@@ -213,7 +213,7 @@
         </IField>
       </connectedfields>
     </IField>
-    <IField type="startfield">
+    <IField type="startfield" playerid="4">
       <CoordX>9</CoordX>
       <CoordY>1</CoordY>
       <IsVillage>false</IsVillage>
