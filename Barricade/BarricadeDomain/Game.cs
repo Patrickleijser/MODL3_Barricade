@@ -116,11 +116,6 @@ public class Game
     {
         Pawn selected = activePlayer.ChoosePawn(nr);
     }
-
-    public void PlacePawn()
-    {
-        activePlayer.PlacePawn();
-    }
     #endregion
 
 }

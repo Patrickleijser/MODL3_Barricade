@@ -9,7 +9,7 @@ public class StartField : BaseField
 
     public override bool CanPlace(IMoveable moveable)
     {
-        if (Moveables != null)
+        if (Moveables.Count != 0)
             return false;
         else
             return true;
